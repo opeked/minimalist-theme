@@ -328,5 +328,5 @@ Se gostou, considere:
 
 ---
 
-*Tema criado com ❤️ para a comunidade Vencord*
-*Última atualização: 2026*
+*Tema criado com ❤️ Por Zenin and Team*
+*Última Atualização: 12/05/2026*
