@@ -1,0 +1,561 @@
+/* ═══════════════════════════════════════════════════════════════════ */
+/* 🎨 PALETA DE CORES E VARIÁVEIS                                      */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* Cores Principais */
+  --primary: #2a2f3a;
+  --secondary: #1a1e28;
+  --accent: #7c3aed;
+  --accent-hover: #9f7aea;
+  
+  /* Cores de Feedback */
+  --success: #10b981;
+  --error: #ef4444;
+  --warning: #f59e0b;
+  --info: #3b82f6;
+  
+  /* Neutros e Fundos */
+  --bg-dark: #0f1117;
+  --bg-darker: #0a0e17;
+  --surface: #1a1f2e;
+  --surface-light: #252b3a;
+  --text-primary: #e8eef8;
+  --text-secondary: #a8b2d1;
+  --border-color: rgba(124, 58, 237, 0.2);
+  
+  /* Sombras */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* 🎬 ANIMAÇÕES GLOBAIS                                                 */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(124, 58, 237, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 16px rgba(124, 58, 237, 0.6);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes smoothBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* 🎭 ESTILOS GLOBAIS                                                   */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+* {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease !important;
+}
+
+body,
+.app,
+.appMount {
+  background: var(--bg-darker) !important;
+  color: var(--text-primary) !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif !important;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* 📱 BARRA LATERAL (SERVIDORES)                                        */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+.guilds__3d_5a {
+  background: var(--secondary) !important;
+  padding: 8px !important;
+}
+
+.guilds__3d_5a .wrapper__96c0d {
+  gap: 8px !important;
+}
+
+/* Ícones de Servidor */
+.guilds__3d_5a .pill__0a46a,
+.guilds__3d_5a .circleIconButton__22e72 {
+  border-radius: 12px !important;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.guilds__3d_5a .pill__0a46a:hover,
+.guilds__3d_5a .circleIconButton__22e72:hover {
+  border-radius: 8px !important;
+  transform: translateY(-2px) scale(1.05) !important;
+  box-shadow: 0 6px 16px rgba(124, 58, 237, 0.4) !important;
+}
+
+.guilds__3d_5a .pill__0a46a[aria-label*="online"]::before,
+.guilds__3d_5a .pill__0a46a.selected__0dd19::before {
+  background: var(--accent) !important;
+  border-radius: 4px !important;
+  animation: glowPulse 2s ease-in-out infinite !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* 📂 PAINEL LATERAL (CANAIS E SERVIDORES)                              */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+.sidebar__81801 {
+  background: var(--primary) !important;
+  border-right: 1px solid var(--border-color) !important;
+}
+
+.sidebarRegionScroller__03d24 {
+  background: var(--primary) !important;
+}
+
+/* Itens de Canal */
+.containerDefault__59701,
+.containerDragAfter__2c542 {
+  margin: 2px 8px !important;
+  padding: 6px 8px !important;
+  border-radius: 8px !important;
+  color: var(--text-secondary) !important;
+  transition: all 0.2s ease !important;
+}
+
+.containerDefault__59701:hover,
+.containerDragAfter__2c542:hover {
+  background: rgba(124, 58, 237, 0.1) !important;
+  color: var(--text-primary) !important;
+  transform: translateX(4px) !important;
+}
+
+.containerDefault__59701.muted__2dde4 {
+  opacity: 0.6 !important;
+}
+
+.containerDefault__59701.selected__25b6b {
+  background: rgba(124, 58, 237, 0.25) !important;
+  color: var(--accent) !important;
+  border-left: 3px solid var(--accent) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* 💬 ÁREA DE CHAT                                                      */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+.chatContent__5a37a {
+  background: var(--bg-dark) !important;
+}
+
+.messagesWrapper__83b8c {
+  padding-top: 12px !important;
+}
+
+/* Mensagens */
+.message__1e0b9 {
+  margin: 6px 0 !important;
+  padding: 8px 16px !important;
+  border-radius: 8px !important;
+  animation: fadeIn 0.3s ease !important;
+  transition: all 0.2s ease !important;
+}
+
+.message__1e0b9:hover {
+  background: rgba(124, 58, 237, 0.08) !important;
+  transform: translateX(2px) !important;
+}
+
+.message__1e0b9 .messageContent__21e69 {
+  color: var(--text-primary) !important;
+  line-height: 1.5;
+}
+
+.message__1e0b9 .username__04f90 {
+  color: var(--accent) !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease !important;
+}
+
+.message__1e0b9:hover .username__04f90 {
+  color: var(--accent-hover) !important;
+  text-shadow: 0 0 8px rgba(124, 58, 237, 0.3) !important;
+}
+
+.timestamp__5d183 {
+  color: var(--text-secondary) !important;
+  font-size: 12px !important;
+  opacity: 0.7 !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* ✍️ CAIXA DE ENTRADA DE MENSAGEM                                     */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+.channelTextArea__8daed {
+  padding: 16px !important;
+}
+
+.textArea__d8da9,
+.textInput__42f77 {
+  background: var(--surface) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 12px !important;
+  color: var(--text-primary) !important;
+  padding: 12px 16px !important;
+  font-size: 15px !important;
+  transition: all 0.3s ease !important;
+}
+
+.textArea__d8da9:focus,
+.textInput__42f77:focus,
+.textArea__d8da9:focus-within,
+.textInput__42f77:focus-within {
+  background: var(--surface-light) !important;
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 12px rgba(124, 58, 237, 0.3) !important;
+}
+
+.textArea__d8da9::placeholder,
+.textInput__42f77::placeholder {
+  color: var(--text-secondary) !important;
+  opacity: 0.7 !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* 🔘 BOTÕES GLOBAIS                                                    */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+.button__0efed,
+button {
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.button__0efed:hover,
+button:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+.button__0efed:active,
+button:active {
+  transform: translateY(0) !important;
+}
+
+/* Botão Primário (Roxo) */
+.buttonColor__0b9ef.colorBrand__1d4e3 {
+  background: var(--accent) !important;
+  color: white !important;
+}
+
+.buttonColor__0b9ef.colorBrand__1d4e3:hover {
+  background: var(--accent-hover) !important;
+}
+
+/* Botão Secundário */
+.buttonColor__0b9ef.colorPrimary__1aba9 {
+  background: var(--surface) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.buttonColor__0b9ef.colorPrimary__1aba9:hover {
+  background: var(--surface-light) !important;
+  border-color: var(--accent) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* 👥 PAINEL DE MEMBROS                                                 */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+.membersWrap__8f33a,
+.members__9f48e {
+  background: var(--primary) !important;
+  border-left: 1px solid var(--border-color) !important;
+}
+
+.member__1oabc {
+  margin: 4px 8px !important;
+  padding: 8px 12px !important;
+  border-radius: 8px !important;
+  transition: all 0.2s ease !important;
+}
+
+.member__1oabc:hover {
+  background: rgba(124, 58, 237, 0.15) !important;
+  transform: translateX(-4px) !important;
+}
+
+/* Status Online */
+.avatarContainer__3B8p8 .avatarStatus__0c24d {
+  background: var(--success) !important;
+  border: 2px solid var(--bg-dark) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* 🎚️ MODAIS E DIÁLOGOS                                                */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+.modal__46d36,
+.root__62f72 {
+  background: var(--primary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 16px !important;
+  box-shadow: var(--shadow-lg) !important;
+  animation: fadeIn 0.3s ease !important;
+}
+
+.header__181cd {
+  background: rgba(124, 58, 237, 0.08) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  color: var(--text-primary) !important;
+  padding: 20px !important;
+}
+
+.header__181cd h1,
+.header__181cd h2 {
+  color: var(--accent) !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* 🔔 NOTIFICAÇÕES E BADGES                                             */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+.badge__5571e {
+  background: var(--accent) !important;
+  color: white !important;
+  border-radius: 12px !important;
+  font-weight: 700 !important;
+  animation: slideInLeft 0.3s ease !important;
+}
+
+.numberBadge__8e9f3 {
+  background: var(--error) !important;
+  animation: glowPulse 1.5s ease-in-out infinite !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* 🎤 PAINEL DE VOZ (STREAMING/VIDEOCHAMADA)                            */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+.container__34d23 {
+  background: var(--surface) !important;
+  border-radius: 12px !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.wrapper__8be9f .button__0efed {
+  margin: 8px !important;
+  border-radius: 50% !important;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+.wrapper__8be9f .button__0efed:hover {
+  transform: scale(1.08) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* 🎯 MENCIONA E REAÇÕES                                                */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+.mention {
+  background: rgba(124, 58, 237, 0.3) !important;
+  color: var(--accent) !important;
+  border-radius: 4px !important;
+  padding: 2px 4px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+.mention:hover {
+  background: rgba(124, 58, 237, 0.5) !important;
+  text-decoration: underline !important;
+}
+
+.emoji {
+  filter: brightness(1.1) !important;
+  transition: all 0.2s ease !important;
+}
+
+.emoji:hover {
+  transform: scale(1.2) rotate(12deg) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* 🌙 SCROLLBAR CUSTOMIZADO                                             */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(124, 58, 237, 0.4) !important;
+  border-radius: 4px !important;
+  transition: all 0.2s ease !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(124, 58, 237, 0.7) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* ✨ EFEITOS ESPECIAIS E FINISHING TOUCHES                             */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+/* Efeito de Glow em Elementos Importantes */
+.selected__25b6b,
+.selected__02ee9 {
+  position: relative;
+}
+
+.selected__25b6b::before,
+.selected__02ee9::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    circle at top-left,
+    rgba(124, 58, 237, 0.1),
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+/* Animação de Entrada para Elementos */
+.chat__76ee6 > * {
+  animation: floatUp 0.4s ease-out;
+}
+
+/* Efeito de Hover Global Suave */
+[role="button"],
+.clickable__58e2f {
+  cursor: pointer !important;
+  position: relative;
+  transition: all 0.2s ease !important;
+}
+
+[role="button"]:hover,
+.clickable__58e2f:hover {
+  color: var(--accent) !important;
+}
+
+/* Status Indicator Animado */
+.activity__44b1f,
+.status__9a1aa {
+  animation: glowPulse 2s ease-in-out infinite !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* 🎪 EASTER EGG - ANIMAÇÃO AO ROLAR                                   */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+.message__1e0b9 {
+  animation: floatUp 0.5s ease-out !important;
+}
+
+/* Suporte a Emojis - Pequeno Bounce */
+.emoji,
+[data-name*="emoji"],
+.reaction__5c1c9 {
+  animation: smoothBounce 0.6s ease-in-out infinite !important;
+  animation-delay: 0.1s !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* 📱 RESPONSIVIDADE                                                    */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .sidebar__81801 {
+    width: 100% !important;
+  }
+  
+  .message__1e0b9 {
+    padding: 6px 12px !important;
+    margin: 4px 0 !important;
+  }
+  
+  .channelTextArea__8daed {
+    padding: 12px !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* 🎭 MODO DARK - SUPORTE EXTRA                                        */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-darker: #0a0e17 !important;
+    --primary: #2a2f3a !important;
+    --secondary: #1a1e28 !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* 🚀 FIM DO TEMA - Feito com ❤️ para Vencord                           */
+/* ═══════════════════════════════════════════════════════════════════ */
