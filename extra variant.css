@@ -1,0 +1,511 @@
+/* ╔═══════════════════════════════════════════════════════════════════╗ */
+/* ║      VENCORD - VARIAÇÕES DO TEMA (Escolha Sua Favorita)           ║ */
+/* ║  Copie e cole uma variação completa no QuickCSS                   ║ */
+/* ╚═══════════════════════════════════════════════════════════════════╝ */
+
+/*
+  ╔════════════════════════════════════════════════════════════════╗
+  ║             VARIAÇÃO 1: ROXO MÍSTICO (PADRÃO)                 ║
+  ║  Elegante, moderno e sofisticado. Ideal para uso diário.      ║
+  ╚════════════════════════════════════════════════════════════════╝
+*/
+
+:root {
+  --primary: #2a2f3a;
+  --secondary: #1a1e28;
+  --accent: #7c3aed;
+  --accent-hover: #9f7aea;
+  --bg-dark: #0f1117;
+  --bg-darker: #0a0e17;
+  --surface: #1a1f2e;
+  --surface-light: #252b3a;
+  --text-primary: #e8eef8;
+  --text-secondary: #a8b2d1;
+  --border-color: rgba(124, 58, 237, 0.2);
+}
+
+/*
+  ╔════════════════════════════════════════════════════════════════╗
+  ║             VARIAÇÃO 2: AZUL NEON - CYBERPUNK                 ║
+  ║  Futurista e vibrante. Para os amantes de sci-fi.              ║
+  ║  Descomente esta seção e comente a anterior para usar.         ║
+  ╚════════════════════════════════════════════════════════════════╝
+
+:root {
+  --primary: #0f1620;
+  --secondary: #0a0f18;
+  --accent: #0ea5e9;
+  --accent-hover: #38bdf8;
+  --bg-dark: #050a13;
+  --bg-darker: #020612;
+  --surface: #0a1629;
+  --surface-light: #132a4a;
+  --text-primary: #e0f2fe;
+  --text-secondary: #7dd3fc;
+  --border-color: rgba(14, 165, 233, 0.2);
+}
+
+*/
+
+/*
+  ╔════════════════════════════════════════════════════════════════╗
+  ║             VARIAÇÃO 3: VERDE NEÓN - HACKER                   ║
+  ║  Estilo Matrix. Para desenvolvedores e nerds.                  ║
+  ║  Descomente para usar.                                          ║
+  ╚════════════════════════════════════════════════════════════════╝
+
+:root {
+  --primary: #0a2818;
+  --secondary: #051410;
+  --accent: #10b981;
+  --accent-hover: #34d399;
+  --bg-dark: #0f1f17;
+  --bg-darker: #050c0a;
+  --surface: #1a2f2a;
+  --surface-light: #2a4a3f;
+  --text-primary: #d1fae5;
+  --text-secondary: #6ee7b7;
+  --border-color: rgba(16, 185, 129, 0.2);
+}
+
+*/
+
+/*
+  ╔════════════════════════════════════════════════════════════════╗
+  ║             VARIAÇÃO 4: ROSA PASTEL - SOFT                    ║
+  ║  Delicado e bonito. Para quem ama cores quentes.               ║
+  ║  Descomente para usar.                                          ║
+  ╚════════════════════════════════════════════════════════════════╝
+
+:root {
+  --primary: #2a1a25;
+  --secondary: #1a0f15;
+  --accent: #ec4899;
+  --accent-hover: #f472b6;
+  --bg-dark: #1a0a15;
+  --bg-darker: #0f050a;
+  --surface: #2a1a25;
+  --surface-light: #3a2a35;
+  --text-primary: #fce7f3;
+  --text-secondary: #fbcfe8;
+  --border-color: rgba(236, 72, 153, 0.2);
+}
+
+*/
+
+/*
+  ╔════════════════════════════════════════════════════════════════╗
+  ║           VARIAÇÃO 5: LARANJA SUNSET - WARM                   ║
+  ║  Quente e acolhedor. Para uso noturno confortável.             ║
+  ║  Descomente para usar.                                          ║
+  ╚════════════════════════════════════════════════════════════════╝
+
+:root {
+  --primary: #2a1f10;
+  --secondary: #1a1410;
+  --accent: #f97316;
+  --accent-hover: #fb923c;
+  --bg-dark: #1f1409;
+  --bg-darker: #140a00;
+  --surface: #2a1f10;
+  --surface-light: #3a2f20;
+  --text-primary: #fed7aa;
+  --text-secondary: #fea577;
+  --border-color: rgba(249, 115, 22, 0.2);
+}
+
+*/
+
+/*
+  ╔════════════════════════════════════════════════════════════════╗
+  ║            VARIAÇÃO 6: CYAN AQUA - MINIMALISTA                ║
+  ║  Fresco e moderno. Inspirado em design minimalista.            ║
+  ║  Descomente para usar.                                          ║
+  ╚════════════════════════════════════════════════════════════════╝
+
+:root {
+  --primary: #0a1f2a;
+  --secondary: #051420;
+  --accent: #06b6d4;
+  --accent-hover: #22d3ee;
+  --bg-dark: #0f1b24;
+  --bg-darker: #051015;
+  --surface: #1a2f3a;
+  --surface-light: #2a4a5a;
+  --text-primary: #cffafe;
+  --text-secondary: #a5f3fc;
+  --border-color: rgba(6, 182, 212, 0.2);
+}
+
+*/
+
+/*
+  ╔════════════════════════════════════════════════════════════════╗
+  ║          VARIAÇÃO 7: ROXO ESCURO - MIDNIGHT                   ║
+  ║  Muito escuro para proteção ocular. Ideal para noites.         ║
+  ║  Descomente para usar.                                          ║
+  ╚════════════════════════════════════════════════════════════════╝
+
+:root {
+  --primary: #1a1220;
+  --secondary: #0f0a15;
+  --accent: #a78bfa;
+  --accent-hover: #c4b5fd;
+  --bg-dark: #0a0610;
+  --bg-darker: #030105;
+  --surface: #15101a;
+  --surface-light: #1f1a2a;
+  --text-primary: #e9d5ff;
+  --text-secondary: #d8b4fe;
+  --border-color: rgba(167, 139, 250, 0.2);
+}
+
+*/
+
+/*
+  ╔════════════════════════════════════════════════════════════════╗
+  ║           VARIAÇÃO 8: AMARELO GOLDEN - PREMIUM                ║
+  ║  Luxuoso e elegante. Para quem aprecia ouro.                   ║
+  ║  Descomente para usar.                                          ║
+  ╚════════════════════════════════════════════════════════════════╝
+
+:root {
+  --primary: #2a2410;
+  --secondary: #1a1810;
+  --accent: #f59e0b;
+  --accent-hover: #fbbf24;
+  --bg-dark: #1f1a09;
+  --bg-darker: #0f0a00;
+  --surface: #2a2410;
+  --surface-light: #3a3420;
+  --text-primary: #fef3c7;
+  --text-secondary: #fcd34d;
+  --border-color: rgba(245, 158, 11, 0.2);
+}
+
+*/
+
+/*
+  ╔════════════════════════════════════════════════════════════════╗
+  ║        VARIAÇÃO 9: VERMELHO RUBY - PASSIONATE                 ║
+  ║  Intenso e chamativo. Para perfis gaming.                      ║
+  ║  Descomente para usar.                                          ║
+  ╚════════════════════════════════════════════════════════════════╝
+
+:root {
+  --primary: #2a1020;
+  --secondary: #1a0810;
+  --accent: #ef4444;
+  --accent-hover: #f87171;
+  --bg-dark: #1a0a0f;
+  --bg-darker: #0a0305;
+  --surface: #2a1520;
+  --surface-light: #3a2530;
+  --text-primary: #fee2e2;
+  --text-secondary: #fca5a5;
+  --border-color: rgba(239, 68, 68, 0.2);
+}
+
+*/
+
+/*
+  ╔════════════════════════════════════════════════════════════════╗
+  ║        VARIAÇÃO 10: GRADIENTE ARCO-ÍRIS - PRIDE               ║
+  ║  Colorido e alegre. Celebre a diversidade!                     ║
+  ║  Descomente para usar.                                          ║
+  ╚════════════════════════════════════════════════════════════════╝
+
+:root {
+  --primary: #1a0f2a;
+  --secondary: #0f0a1a;
+  --accent: #d946ef;
+  --accent-hover: #e879f9;
+  --bg-dark: #0f0a1a;
+  --bg-darker: #050005;
+  --surface: #1a0f2a;
+  --surface-light: #2a1f3a;
+  --text-primary: #f3e8ff;
+  --text-secondary: #e9d5ff;
+  --border-color: rgba(217, 70, 239, 0.2);
+}
+
+*/
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* 🎬 ANIMAÇÕES (Igual em todas as variações)                         */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 8px var(--accent-color, currentColor);
+  }
+  50% {
+    box-shadow: 0 0 16px var(--accent-color, currentColor);
+  }
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes smoothBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* 🎭 ESTILOS GLOBAIS (Base para todas as variações)                   */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+* {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease !important;
+}
+
+body,
+.app,
+.appMount {
+  background: var(--bg-darker) !important;
+  color: var(--text-primary) !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif !important;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+/* Barra Lateral de Servidores */
+.guilds__3d_5a {
+  background: var(--secondary) !important;
+  padding: 8px !important;
+}
+
+.guilds__3d_5a .pill__0a46a,
+.guilds__3d_5a .circleIconButton__22e72 {
+  border-radius: 12px !important;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.guilds__3d_5a .pill__0a46a:hover,
+.guilds__3d_5a .circleIconButton__22e72:hover {
+  border-radius: 8px !important;
+  transform: translateY(-2px) scale(1.05) !important;
+  box-shadow: 0 6px 16px rgba(124, 58, 237, 0.4) !important;
+}
+
+/* Painel Lateral */
+.sidebar__81801 {
+  background: var(--primary) !important;
+  border-right: 1px solid var(--border-color) !important;
+}
+
+/* Canais */
+.containerDefault__59701,
+.containerDragAfter__2c542 {
+  margin: 2px 8px !important;
+  padding: 6px 8px !important;
+  border-radius: 8px !important;
+  color: var(--text-secondary) !important;
+  transition: all 0.2s ease !important;
+}
+
+.containerDefault__59701:hover {
+  background: rgba(124, 58, 237, 0.1) !important;
+  color: var(--text-primary) !important;
+  transform: translateX(4px) !important;
+}
+
+.containerDefault__59701.selected__25b6b {
+  background: rgba(124, 58, 237, 0.25) !important;
+  color: var(--accent) !important;
+  border-left: 3px solid var(--accent) !important;
+}
+
+/* Chat */
+.chatContent__5a37a {
+  background: var(--bg-dark) !important;
+}
+
+.message__1e0b9 {
+  margin: 6px 0 !important;
+  padding: 8px 16px !important;
+  border-radius: 8px !important;
+  animation: fadeIn 0.3s ease !important;
+  transition: all 0.2s ease !important;
+}
+
+.message__1e0b9:hover {
+  background: rgba(124, 58, 237, 0.08) !important;
+  transform: translateX(2px) !important;
+}
+
+.message__1e0b9 .username__04f90 {
+  color: var(--accent) !important;
+  font-weight: 600 !important;
+}
+
+/* Input */
+.textArea__d8da9,
+.textInput__42f77 {
+  background: var(--surface) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 12px !important;
+  color: var(--text-primary) !important;
+  padding: 12px 16px !important;
+}
+
+.textArea__d8da9:focus,
+.textInput__42f77:focus,
+.textArea__d8da9:focus-within,
+.textInput__42f77:focus-within {
+  background: var(--surface-light) !important;
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 12px rgba(124, 58, 237, 0.3) !important;
+}
+
+/* Botões */
+.button__0efed,
+button {
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+.button__0efed:hover,
+button:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Modais */
+.modal__46d36,
+.root__62f72 {
+  background: var(--primary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5) !important;
+  animation: fadeIn 0.3s ease !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(124, 58, 237, 0.4) !important;
+  border-radius: 4px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(124, 58, 237, 0.7) !important;
+}
+
+/* Badges e Status */
+.badge__5571e {
+  background: var(--accent) !important;
+  color: white !important;
+  border-radius: 12px !important;
+  font-weight: 700 !important;
+  animation: slideInLeft 0.3s ease !important;
+}
+
+/* Members */
+.membersWrap__8f33a,
+.members__9f48e {
+  background: var(--primary) !important;
+  border-left: 1px solid var(--border-color) !important;
+}
+
+.member__1oabc {
+  margin: 4px 8px !important;
+  padding: 8px 12px !important;
+  border-radius: 8px !important;
+  transition: all 0.2s ease !important;
+}
+
+.member__1oabc:hover {
+  background: rgba(124, 58, 237, 0.15) !important;
+  transform: translateX(-4px) !important;
+}
+
+/* Emoji Bounce */
+.emoji,
+[data-name*="emoji"],
+.reaction__5c1c9 {
+  animation: smoothBounce 0.6s ease-in-out infinite !important;
+  animation-delay: 0.1s !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* 📱 RESPONSIVIDADE                                                    */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .sidebar__81801 {
+    width: 100% !important;
+  }
+  
+  .message__1e0b9 {
+    padding: 6px 12px !important;
+    margin: 4px 0 !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* 🚀 FIM DAS VARIAÇÕES                                                 */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+/*
+╔═════════════════════════════════════════════════════════════════╗
+║                    COMO USAR VARIAÇÕES:                         ║
+║                                                                 ║
+║ 1. Copie TODO o código acima (com as animações)                ║
+║ 2. Vá em QuickCSS (Ctrl + Shift + C → QuickCSS → Edit)         ║
+║ 3. Cole o código                                                ║
+║ 4. Para mudar de variação:                                      ║
+║    - Comente a seção :root atual (com /* e */)                ║
+║    - Descomente a variação que quer usar                       ║
+║ 5. Salve (Ctrl + S)                                             ║
+║                                                                 ║
+║ Exemplo: Para usar Azul Neon (variação 2):                     ║
+║ - Comente: /* :root { --primary: #2a2f3a; ... } */             ║
+║ - Descomente: :root { --primary: #0f1620; ... }                ║
+║                                                                 ║
+╚═════════════════════════════════════════════════════════════════╝
+*/
