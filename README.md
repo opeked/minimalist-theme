@@ -1,4 +1,4 @@
-# 🎨 VENCORD MINIMALISTA & ANIMADO - Guia Completo
+# 🎨 TEMA MINIMALISTA & ANIMADO - Guia Completo
 
 ## 📋 Sobre o Tema
 
